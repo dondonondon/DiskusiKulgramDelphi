@@ -1,0 +1,56 @@
+object FMenu: TFMenu
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 592
+  ClientWidth = 492
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lyMain: TLayout
+    Align = Client
+    Size.Width = 492.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBox1: TListBox
+      Align = Client
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 462.000000000000000000
+      Size.Height = 577.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnItemClick = ListBox1ItemClick
+      Viewport.Width = 458.000000000000000000
+      Viewport.Height = 573.000000000000000000
+    end
+  end
+  object QHapus: TK2SQL
+    MemDataSet = FDMemTable1
+    Connection = FListBoxConnection.con
+    OnAfterOpen = QHapusAfterOpen
+    Left = 175
+    Top = 250
+  end
+  object FDMemTable1: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 231
+    Top = 322
+  end
+end

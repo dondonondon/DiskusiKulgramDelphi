@@ -1,0 +1,307 @@
+object FListBoxConnection: TFListBoxConnection
+  Left = 0
+  Top = 0
+  Caption = 'FListBoxConnection'
+  ClientHeight = 512
+  ClientWidth = 556
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lbImgHeader: TListBoxItem
+    Position.X = 18.000000000000000000
+    Position.Y = 11.000000000000000000
+    Size.Width = 253.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Image1: TImage
+      MultiResBitmap = <
+        item
+          Width = 80
+          Height = 80
+          PNG = {
+            89504E470D0A1A0A0000000D49484452000000500000005008060000008E11F2
+            AD000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            05F349444154785EED9B496C1B5518C7FF1EDBE3258EE338F192384EEB385B4B
+            9CA5496913A05129B4178E9CB8702F176E2C470EAC121744251045A2A8484805
+            215181686911020AB40A559A26E9923D4DB33849D3384E5B3BB179EF79541552
+            09C8BC194FCCFB5D9E673CB147BFF9DEF7BE6FC68140201008040281E07F8949
+            1971E4D5A7B2CA4BBE64B36F1D7EE3CCCBCA56C12129A376984C2F1D79E5C09B
+            CA56C1B121029F7E34C2B67930BB9844DFF01C0942B251A091A8690406BC4588
+            45FD2408C9468146A2E653B8D0256A9F0309852C51D31CF877FE9213B738875F
+            FF9EB9D325021FC42CDDBF6605812E11985ACBE0CAD83C8B404AA0DC83AE8E46
+            B85D0EB6BD95F8E4C40F6CD42D02A9B45F2F4DB2D16296D01E8BE25077DB9694
+            F7303644A0566CE5A87B10DD23B010A3EE413644E0F3CFEE67DB8287A37B0416
+            3A42A04A84409508812A1102552204AA4408548910A812215025791598CE9831
+            B0E8C397C38D3872A91D6FF774E2B5DFF7E19D9E2E7C74B90DA7276A30B5E256
+            8E36267911B89E35E1F7D910DEBDB8079F5FDB89DE7800B3AB2E24D3327B6F25
+            6DC52411F7F3CD303E2422A9CC894489F2D7C642778189948CA3FD6DF866B416
+            AB4454718913D18610767736E2F1FD31741F6CC563DD4D6869AF45F5763FAC56
+            3393F9F1400B4E9188CC12C1464257810B779CF8E0723B9996C570386C68DE55
+            838EBD0D4C94CBED8055B640329920DBADF0961733B15D44E6F668102672AABF
+            90883C717D0732CAE71901DD04DE5DB3E0B36B4D2C024BBD2EB47736A0CCF7CF
+            D352324B88D456A0A5A316168B84CB24679E1E8F2AEFE61FDD047E3D5A87F93B
+            0E14BB9D24F2A26C6AFE173C447A3399D63442CF4D5761E4B6477927BFE82290
+            AEA4FD0B7E98493435B54558546D86124F11227595ECF5B7E3B586C887BA08FC
+            692A0C7AB736BCCD0FBB5DCEEDDC2455DBCA61239F31B75A84D1E5FCAFCC9A0B
+            4C67240CDD2E65F7BE43D5E5CADECD2349122AC365ECF599C91A562B9E9B0EB3
+            953A1F8F9B35173841A28416CC6E7711649B55D9AB0E9F3F97FF6E90D59CD68A
+            DF8DD7B05AF1FDDEDD242AC9C5D211CD052EDDB3B3D1E5CE8D3C70BAEC640577
+            B39410ADAF44285CCE52439C9449C7069AD1335BA11CA93D9A0B4C90EE8222CB
+            7CA28F42970EBA92D73686501D09A07E67187BF7EDC4F69A209BC62747EB31A6
+            537ED44C20ADFBCE4E46707E36B76A6A9DA04CA4BC89D455A03A1A6085365DA5
+            F5401381434BA5788FE4A31FA7AA597F6B77C870386DCABBDA42A390E6DA99A4
+            8B753C5AC35D601FA9F78E5F69C60A11478BDF5D7BEAD1B9EF1104435EE5086D
+            A1AB74B93F7707E7687F2B3E1D8C619856011AC155E00CA9CDBE1A6A605388F6
+            AFADBBEB58F1AB37C14A2FEB7832309312CA8B6383CDF862A811A975FE138EEB
+            279E1CA9C75A5662AB22ED5FF3D52794785CE820BDF6134FC650BFA30A16D236
+            5E9A0FE0F8B518D6327CCF8A9BC089849B15B3B26C61A58511305BCCA478F731
+            99340F8F91FEF9EC0DBE3FDFE3267070D1C7C660A88C9DB891A0B7CE62AD11B6
+            52FF361DC2ED14BF058D9BC09B64D5A3949669BFF26D0617C98981A007EB24C5
+            F4C683CA5EF57013486FC353EC3675370BB4C4470452C6383E1EE02650967295
+            F27A669D8D46C4E1CCB593CB297E17999BC012DB3D362693B9D1886433B98701
+            1613BFB6889BC09A924536C66796D8684412893B6C2CB5E5461E7013B8C33B4F
+            AE6C06F3F1A5FB276A3466A67217B9CE931B79C04D60B135853D1553ECA6C140
+            EF18D26963E5C2999B8B58BAB582226B1A4D657165AF7AB809A4ECAF1A4765D1
+            0A569377F1C7F9AB585D31463E9C9BB985ABFD13ECF5A1EA61C8667E1797AB40
+            ABB48EE71AFA10742699BC0BE706D9892F2E24904AAD2947E9439A7CDF427C19
+            7D1747D04F664426934557E5245A7CB3CA117CB8DF18F2FC953E6DDA4F4D44D1
+            3357818C019E9CD9CC6B38B86D041DFE6965CFE6D1E557FAB239836722D7F142
+            F3057487C611722DC34572A49E3849AE0B93EF3D101EC58B6DE7B9C87B189A44
+            602123FE4F843342A04A84409508812A1102552204AA4408548910A812215025
+            1B3A11C1BF4374220281402010080402C1A601FE04022CD7B049F56B2F000000
+            0049454E44AE426082}
+        end>
+      Anchors = [akLeft, akTop, akBottom]
+      Position.X = 8.000000000000000000
+      Position.Y = 7.000000000000000000
+      WrapMode = Stretch
+    end
+    object lbHeader: TLabel
+      Anchors = [akLeft, akTop, akRight]
+      StyledSettings = [FontColor]
+      Position.X = 66.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 179.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Arial Rounded MT'
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'lbHeader'
+      TabOrder = 40
+    end
+    object LbDesc: TLabel
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      StyledSettings = [FontColor]
+      Position.X = 66.000000000000000000
+      Position.Y = 26.000000000000000000
+      Size.Width = 179.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Arial Rounded MT'
+      TextSettings.Font.Size = 9.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.VertAlign = Leading
+      Text = 'Label1'
+      TabOrder = 39
+    end
+  end
+  object lbDetail: TListBoxItem
+    Position.X = 19.000000000000000000
+    Position.Y = 84.000000000000000000
+    Size.Width = 253.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Rectangle2: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      HitTest = False
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 61.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      object lblHeader: TLabel
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [FontColor]
+        Position.X = 17.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 224.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial Rounded MT'
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'lbHeader'
+        TabOrder = 41
+      end
+      object lblDesc: TLabel
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        StyledSettings = [FontColor]
+        Position.X = 17.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 224.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial Rounded MT'
+        TextSettings.Font.Size = 9.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.VertAlign = Leading
+        Text = 'Label1'
+        TabOrder = 40
+      end
+      object Rectangle1: TRectangle
+        Align = Left
+        Fill.Color = xFFF68F58
+        Margins.Left = 0.200000002980232200
+        Position.X = 0.200000002980232200
+        Size.Width = 9.000000000000000000
+        Size.Height = 61.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 4.500000000000000000
+        YRadius = 4.500000000000000000
+      end
+    end
+  end
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 459.000000000000000000
+    TabOrder = 4
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object lbiHeader: TListBoxHeader
+    Align = None
+    Position.X = 19.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 255.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    TintColor = claWhite
+    object Rectangle3: TRectangle
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Fill.Color = xFFFF8E01
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 253.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      object Label3: TLabel
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        StyledSettings = []
+        Size.Width = 253.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Arial Rounded MT'
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'lbHeader'
+        TabOrder = 41
+      end
+    end
+  end
+  object lbiSearch: TListBoxHeader
+    Align = None
+    Position.X = 21.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 255.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TintColor = claWhite
+    object Rectangle4: TRectangle
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Fill.Color = claWhite
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 255.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.400000005960464500
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        StyleLookup = 'Edit1Style1'
+        TabOrder = 41
+        TextSettings.Font.Size = 11.500000000000000000
+        Position.X = 4.000000000000000000
+        Margins.Left = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 207.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Cari data'
+        StyledSettings = [Family, Style, FontColor]
+      end
+      object SpeedButton1: TSpeedButton
+        Align = Right
+        Position.X = 223.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'searcheditbutton'
+        Text = 'SpeedButton1'
+      end
+    end
+  end
+  object Button2: TButton
+    Position.X = 110.000000000000000000
+    Position.Y = 459.000000000000000000
+    TabOrder = 6
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+  object mem: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 320
+    Top = 232
+  end
+  object con: TSSQLConnection
+    TunnelUrl = 'http://localhost/entunnel.php'
+    Token = '53713'
+    Host = 'localhost'
+    User = 'admin'
+    Password = '12345'
+    Database = 'coba'
+    Left = 320
+    Top = 120
+  end
+  object Q: TK2SQL
+    MemDataSet = mem
+    Connection = con
+    OnAfterOpen = QAfterOpen
+    OnErroRequest = QErroRequest
+    Left = 320
+    Top = 176
+  end
+end

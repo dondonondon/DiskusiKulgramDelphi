@@ -1,0 +1,188 @@
+object FHome: TFHome
+  Size.Width = 360.000000000000000000
+  Size.Height = 720.000000000000000000
+  Size.PlatformDefault = False
+  object background: TRectangle
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Fill.Color = claWhite
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object loMain: TLayout
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lbData: TListBox
+      Align = Client
+      Size.Width = 360.000000000000000000
+      Size.Height = 660.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 1
+      ShowScrollBars = False
+      Columns = 2
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnItemClick = lbDataItemClick
+      Viewport.Width = 360.000000000000000000
+      Viewport.Height = 660.000000000000000000
+    end
+    object loHeader: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object reHeader: TRectangle
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Fill.Color = claWhite
+        Size.Width = 360.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object seHeader: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.050000000745058060
+        ShadowColor = claBlack
+      end
+    end
+  end
+  object loTemp: TLayout
+    Position.X = 32.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object reTempBackground: TRectangle
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Fill.Color = claWhite
+      HitTest = False
+      Size.Width = 145.000000000000000000
+      Size.Height = 225.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+    end
+    object reTempImage: TRectangle
+      StyleName = 'reTempImage'
+      Anchors = [akLeft, akTop, akRight]
+      Fill.Bitmap.WrapMode = TileStretch
+      Fill.Kind = Bitmap
+      HitTest = False
+      Size.Width = 145.000000000000000000
+      Size.Height = 137.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+    end
+    object lblTempNama: TLabel
+      StyleName = 'lblTempNama'
+      Position.X = 8.000000000000000000
+      Position.Y = 145.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = 'lblTempNama'
+      TabOrder = 4
+    end
+    object lblTempHarga: TLabel
+      StyleName = 'lblTempHarga'
+      Position.X = 8.000000000000000000
+      Position.Y = 170.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = None
+      Text = 'Label1'
+      TabOrder = 3
+    end
+    object lblTempDesk: TLabel
+      StyleName = 'lblTempDesk'
+      Position.X = 8.000000000000000000
+      Position.Y = 195.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      TextSettings.Trimming = None
+      Text = 'Label1'
+      TabOrder = 2
+    end
+    object seTemp: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.050000000745058060
+      ShadowColor = claBlack
+    end
+  end
+  object CornerButton1: TCornerButton
+    Position.X = 24.000000000000000000
+    Position.Y = 30.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    TabOrder = 5
+    Text = 'CornerButton1'
+    TextSettings.Trimming = None
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = CornerButton1Click
+  end
+  object AniIndicator1: TAniIndicator
+    Enabled = True
+    Position.X = 280.000000000000000000
+    Position.Y = 2.000000000000000000
+  end
+  object QProduct: TK2SQL
+    MemDataSet = memProduct
+    Connection = DM.Con
+    OnAfterOpen = QProductAfterOpen
+    OnBeforeOpen = QProductBeforeOpen
+    OnErroRequest = QProductErroRequest
+    Left = 184
+    Top = 32
+  end
+  object memProduct: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 256
+    Top = 56
+  end
+  object QDownload: TK2SQL
+    MemDataSet = memDownload
+    Connection = DM.Con
+    OnAfterOpen = QProductAfterOpen
+    OnBeforeOpen = QProductBeforeOpen
+    OnErroRequest = QProductErroRequest
+    Left = 208
+    Top = 248
+  end
+  object memDownload: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 280
+    Top = 272
+  end
+end
